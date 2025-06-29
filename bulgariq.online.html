@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="bg" dir="ltr">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <title>Bulgaria Online - Мисия, Продукти и Дейност</title>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <style>
+        /* Основен стил за плавно превъртане */
+        html {
+            scroll-behavior: smooth;
+        }
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f3f4f6;
+            color: #1f2937;
+        }
+        .section-card {
+            background-color: #ffffff;
+            border-radius: 1rem;
+            padding: 2.5rem; /* 40px */
+            margin-top: 3rem; /* 48px */
+            border: 1px solid #e5e7eb;
+            box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+        }
+        .nav-link {
+             padding: 8px 16px;
+             border-radius: 8px;
+             transition: background-color 0.2s, color 0.2s;
+             color: #4b5563; /* text-gray-600 */
+        }
+        .nav-link:hover {
+            background-color: #f3f4f6; /* bg-gray-100 */
+            color: #1f2937; /* text-gray-800 */
+        }
+        .card-base {
+            background-color: #ffffff;
+            border-radius: 1rem;
+            text-align: left;
+            border: 1px solid #e5e7eb;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            display: flex;
+            flex-direction: column;
+            overflow: hidden; /* Важно за ефекта на снимката */
+        }
+        .card-base:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+        }
+        .card-base img {
+            transition: transform 0.3s ease;
+        }
+        .card-base:hover img {
+            transform: scale(1.05);
+        }
+        .activity-card {
+             text-align: center;
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <header class="bg-white/80 backdrop-blur-md sticky top-0 z-50 border-b">
+        <div class="container mx-auto px-6 py-3 flex justify-between items-center">
+            <a href="#home" class="text-2xl font-bold text-gray-800">
+                <i class="fas fa-leaf text-blue-600"></i>
+                Bulgaria Online
+            </a>
+            <nav class="hidden md:flex items-center space-x-2">
+                <a href="#home" class="nav-link">Начало</a>
+                <a href="#products" class="nav-link">Продукти</a>
+                <a href="#philosophy" class="nav-link">Философия</a>
+                <a href="#future" class="nav-link">Бъдеще</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container mx-auto px-6 py-12">
+
+        <section id="home">
+            <div class="text-center">
+                <h1 class="text-4xl font-bold text-gray-900 mb-4">Променяме Света Чрез Действие</h1>
+                <p class="text-lg text-gray-600 max-w-3xl mx-auto">
+                    Добре дошли в Bulgaria Online. Ние сме неформална общност от 20 съмишленици, обединени от обща цел: да допринесем за изграждането на по-осъзнато и добродетелно общество.
+                </p>
+            </div>
+            
+            <div class="mt-16">
+                 <h2 class="text-3xl font-bold text-center text-gray-800 mb-10">Нашата Дейност</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <div class="card-base activity-card p-8">
+                        <div class="text-4xl text-blue-600 mb-4"><i class="fas fa-graduation-cap"></i></div>
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">Образователни Инициативи</h3>
+                        <p class="text-gray-600">Организираме кампании срещу човешките пороци и насърчаваме критичното мислене.</p>
+                    </div>
+                    <div class="card-base activity-card p-8">
+                        <div class="text-4xl text-blue-600 mb-4"><i class="fas fa-hands-helping"></i></div>
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">Доброволческа Дейност</h3>
+                        <p class="text-gray-600">Участваме активно в обществено значими каузи, като влагаме време и усилия в подкрепа на нуждаещите се.</p>
+                    </div>
+                    <div class="card-base activity-card p-8">
+                        <div class="text-4xl text-blue-600 mb-4"><i class="fas fa-microchip"></i></div>
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">Иновации и AI</h3>
+                        <p class="text-gray-600">Разработваме и предоставяме безплатни инструменти с изкуствен интелект за личностно и професионално развитие.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="products" class="section-card">
+            <h2 class="text-3xl font-bold text-gray-900 mb-12 text-center">Нашите Продукти</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-10 max-w-5xl mx-auto">
+
+                <div class="card-base">
+                    <img src="https://i.imgur.com/GifT6qw.png" alt="Opentrading.us" class="w-full h-52 object-cover bg-gray-200">
+                    <div class="p-6 flex-grow flex flex-col">
+                        <h3 class="text-2xl font-bold text-gray-800 mb-2">opentrading.us</h3>
+                        <p class="text-gray-600 flex-grow">
+                            Продуктът е в <strong>бета версия</strong> и в момента е наличен само за потребители, поканени да тестват платформата.
+                        </p>
+                        <div class="mt-4 pt-4 border-t border-gray-200">
+                             <p class="text-sm text-gray-500">Официален старт: <strong class="text-gray-700">1.08.2025</strong></p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card-base">
+                    <img src="https://i.imgur.com/45O8v9X.png" alt="LinkVibe" class="w-full h-52 object-cover bg-gray-200">
+                     <div class="p-6 flex-grow flex flex-col">
+                        <h3 class="text-2xl font-bold text-gray-800 mb-2">LinkVibe</h3>
+                        <p class="text-gray-600 flex-grow">
+                            Социална мрежа от ново поколение, която е в <strong>много ранен етап на разработка</strong>. При евентуално забавяне, потребителите ще бъдат уведомени.
+                        </p>
+                        <div class="mt-4 pt-4 border-t border-gray-200">
+                             <p class="text-sm text-gray-500">Очаквайте: <strong class="text-gray-700">Пролетта на 2026</strong></p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card-base">
+                    <img src="https://i.imgur.com/hdqVPAR.png" alt="NikiAI" class="w-full h-52 object-cover bg-gray-200">
+                     <div class="p-6 flex-grow flex flex-col">
+                        <h3 class="text-2xl font-bold text-gray-800 mb-2">NikiAI</h3>
+                        <p class="text-gray-600 flex-grow">
+                            Изкуствен интелект в процес на разработка, който ще комуникира с гласови команди, ще извършва емоционална симулация и ще има познанията на средностатистически човек.
+                        </p>
+                        <div class="mt-4 pt-4 border-t border-gray-200">
+                             <p class="text-sm text-gray-500">Очаквайте: <strong class="text-gray-700">Края на 2025</strong></p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card-base">
+                    <img src="https://i.imgur.com/SqNAiIe.png" alt="NightGPT" class="w-full h-52 object-cover bg-gray-200">
+                     <div class="p-6 flex-grow flex flex-col">
+                        <h3 class="text-2xl font-bold text-gray-800 mb-2">NightGPT</h3>
+                        <p class="text-gray-600 flex-grow">
+                             Подобрен UI дизайн на сайта nightgpt.net.
+                        </p>
+                         <div class="mt-4 pt-4 border-t border-gray-200 flex items-center justify-between">
+                            <p class="text-sm text-gray-500">Старт: <strong class="text-gray-700">7.07.2025 в 7:00</strong></p>
+                            <a href="https://nightgpt.net" target="_blank" class="bg-blue-600 text-white font-semibold py-2 px-5 rounded-lg hover:bg-blue-700 transition-colors">Тест</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="philosophy" class="section-card">
+            <h2 class="text-3xl font-bold text-gray-900 mb-6 text-center">Нашата Философия</h2>
+            <div class="space-y-4 text-gray-700 leading-relaxed max-w-4xl mx-auto">
+                <p>В основата на всичко, което правим, стоят няколко водещи принципа, които оформят нашия мироглед и подход:</p>
+                <ul class="list-disc list-inside space-y-3 pl-4">
+                    <li><b>Стремеж към развитие с уважение:</b> Вярваме, че за да се извлече максимумът от живота, е нужна здравословна амбиция, като същевременно винаги уважаваме границите на околните. Щастието за нас се гради на принципа да вземеш от света, да го захраниш с енергията си и най-важното – да го опазиш за добро.</li>
+                    <li><b>Интегриране, а не отхвърляне:</b> Разбираме, че парите и амбицията са част от играта в съвременния свят. Вместо да ги отхвърляме, ние ги интегрираме, като следваме принципа да даряваме повече, отколкото харчим.</li>
+                    <li><b>Вяра в човека:</b> В основата на нашата работа е вярата в хората – независимо от техния произход, възраст или култура. Убедени сме, че във всеки човек има добро.</li>
+                    <li><b>Вътрешен мир и щастие:</b> Не таим злопаметност, защото знаем, че моментите идват и си отиват. По-добре е да намерим вътрешен мир в това, което обичаме, отколкото да търсим одобрение. Любовта за нас е искрена и чиста.</li>
+                    <li><b>Прагматизъм и отвореност:</b> Знаем, че понякога компромисът може да отвори врати към неочаквани възможности и не разчитаме на късмета повече от необходимото.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="future" class="section-card">
+            <h2 class="text-3xl font-bold text-gray-900 mb-8 text-center">Екип, Финансиране и Бъдещи Планове</h2>
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 max-w-6xl mx-auto">
+                <div class="space-y-6">
+                     <h3 class="text-2xl font-semibold text-gray-800 border-b pb-2">Екип и Финансиране</h3>
+                    <p class="text-gray-700 leading-relaxed">
+                        Ние сме екип от 20 съмишленици, които допринасят с времето и уменията си за постигане на общите ни цели. Нашата организация се финансира изцяло с <b>частни средства</b> на учредителите. Важно е да подчертаем, че <b class="text-red-600">не приемаме дарения</b>.
+                    </p>
+                </div>
+                <div class="space-y-6">
+                    <h3 class="text-2xl font-semibold text-gray-800 border-b pb-2">Планове за Бъдещето</h3>
+                     <div class="space-y-4">
+                        <div class="bg-blue-50 p-4 rounded-lg border border-blue-200">
+                            <h4 class="font-bold text-lg text-blue-800">Статут на НПО</h4>
+                            <p class="text-blue-700">Трансформация в официално регистрирана неправителствена организация (НПО), за да разширим мащаба и въздействието на нашите проекти.</p>
+                        </div>
+                        <div class="bg-blue-50 p-4 rounded-lg border border-blue-200">
+                            <h4 class="font-bold text-lg text-blue-800">Устойчиво Развитие</h4>
+                            <p class="text-blue-700">Разработване на платени услуги в сферата на крипто търговията и AI. Приходите ще бъдат реинвестирани в подкрепа на нашите обществени каузи.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="bg-white mt-16 border-t">
+        <div class="container mx-auto px-6 py-6 text-center text-gray-600">
+            &copy; 2025 Bulgaria Online. Всички права запазени.
+        </div>
+    </footer>
+
+</body>
+</html>
