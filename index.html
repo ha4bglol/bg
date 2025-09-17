@@ -4,247 +4,290 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
     <title>Bulgaria Online - AI & Design</title>
-    
-    <script src="https://cdn.tailwindcss.com"></script>
-    
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-    
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+code
+Code
+<script src="https://cdn.tailwindcss.com"></script>
 
-    <style>
-        html {
-            scroll-behavior: smooth;
-        }
-        body {
-            font-family: 'Inter', sans-serif;
-            background-color: #f5f5f7; /* iOS-like light gray background */
-            color: #1d1d1f; /* Apple's primary text color */
-        }
-        .section-container {
-            background-color: #ffffff;
-            border-radius: 1.25rem; /* 20px */
-            padding: 4rem; /* 64px */
-            margin-top: 4rem; /* 64px */
-        }
-        .nav-link {
-             padding: 10px 20px;
-             border-radius: 9999px; /* Pill shape */
-             transition: background-color 0.3s, color 0.3s;
-             font-weight: 500;
-             color: #555;
-        }
-        .nav-link:hover {
-            background-color: #e8e8ea;
-            color: #111;
-        }
-        .product-card {
-            background-color: #ffffff;
-            border-radius: 1.25rem; /* 20px */
-            border: 1px solid #e5e7eb;
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-            display: flex;
-            flex-direction: column;
-            overflow: hidden;
-            box-shadow: 0 4px 15px -2px rgba(0, 0, 0, 0.05);
-        }
-        .product-card:hover {
-            transform: translateY(-10px);
-            box-shadow: 0 12px 25px -5px rgba(0, 0, 0, 0.1);
-        }
-        .product-card img {
-            transition: transform 0.3s ease;
-        }
-        .product-card:hover img {
-            transform: scale(1.05);
-        }
-        .competency-card {
-             background-color: #f5f5f7;
-             border-radius: 1rem;
-             padding: 2rem;
-             text-align: center;
-             transition: background-color 0.3s ease;
-        }
-        .competency-card:hover {
-            background-color: #e8e8ea;
-        }
-        .btn-primary {
-            background-color: #007AFF; /* Apple's blue */
-            color: white;
-            font-weight: 600;
-            padding: 12px 28px;
-            border-radius: 9999px;
-            transition: background-color 0.3s ease;
-        }
-        .btn-primary:hover {
-            background-color: #005ecb;
-        }
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 
-    </style>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+<style>
+    html {
+        scroll-behavior: smooth;
+    }
+    body {
+        font-family: 'Inter', sans-serif;
+        background-color: #f5f5f7; /* iOS-like light gray background */
+        color: #1d1d1f; /* Apple's primary text color */
+    }
+    .section-container {
+        background-color: #ffffff;
+        border-radius: 1.25rem; /* 20px */
+        padding: 4rem; /* 64px */
+        margin-top: 4rem; /* 64px */
+    }
+    .nav-link {
+         padding: 10px 20px;
+         border-radius: 9999px; /* Pill shape */
+         transition: background-color 0.3s, color 0.3s;
+         font-weight: 500;
+         color: #555;
+    }
+    .nav-link:hover {
+        background-color: #e8e8ea;
+        color: #111;
+    }
+    .product-card {
+        background-color: #ffffff;
+        border-radius: 1.25rem; /* 20px */
+        border: 1px solid #e5e7eb;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+        box-shadow: 0 4px 15px -2px rgba(0, 0, 0, 0.05);
+    }
+    .product-card:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 12px 25px -5px rgba(0, 0, 0, 0.1);
+    }
+    .product-card img {
+        transition: transform 0.3s ease;
+    }
+    .product-card:hover img {
+        transform: scale(1.05);
+    }
+    .competency-card {
+         background-color: #f5f5f7;
+         border-radius: 1rem;
+         padding: 2rem;
+         text-align: center;
+         transition: background-color 0.3s ease;
+    }
+    .competency-card:hover {
+        background-color: #e8e8ea;
+    }
+    .btn-primary {
+        background-color: #007AFF; /* Apple's blue */
+        color: white;
+        font-weight: 600;
+        padding: 12px 28px;
+        border-radius: 9999px;
+        transition: background-color 0.3s ease;
+    }
+    .btn-primary:hover {
+        background-color: #005ecb;
+    }
+
+</style>
 </head>
 <body class="antialiased">
+code
+Code
+<header class="bg-white/80 backdrop-blur-xl sticky top-0 z-50 border-b border-gray-200">
+    <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+        <a href="#home" class="text-2xl font-bold text-gray-900">
+            <i class="fas fa-rocket text-blue-600"></i>
+            Bulgaria Online
+        </a>
+        <nav class="hidden md:flex items-center space-x-1">
+            <a href="#home" class="nav-link">Начало</a>
+            <a href="#expertise" class="nav-link">Експертиза</a>
+            <a href="#products" class="nav-link">Продукти</a>
+            <a href="#activity" class="nav-link">Нашата дейност</a>
+            <a href="#about" class="nav-link">За нас</a>
+        </nav>
+    </div>
+</header>
 
-    <header class="bg-white/80 backdrop-blur-xl sticky top-0 z-50 border-b border-gray-200">
-        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
-            <a href="#home" class="text-2xl font-bold text-gray-900">
-                <i class="fas fa-rocket text-blue-600"></i>
-                Bulgaria Online
-            </a>
-            <nav class="hidden md:flex items-center space-x-1">
-                <a href="#home" class="nav-link">Начало</a>
-                <a href="#expertise" class="nav-link">Експертиза</a>
-                <a href="#products" class="nav-link">Продукти</a>
-                <a href="#about" class="nav-link">За нас</a>
-            </nav>
+<main class="container mx-auto px-6 py-12">
+
+    <section id="home" class="text-center py-20">
+        <h1 class="text-5xl md:text-7xl font-extrabold text-gray-900 mb-6 leading-tight">
+            Интелигентни Решения<br>за Дигиталния Свят
+        </h1>
+        <p class="text-lg text-gray-600 max-w-3xl mx-auto mb-10">
+            Ние сме екип от софтуерни разработчици, специализирани в създаването на иновативни продукти с изкуствен интелект и модерен графичен дизайн.
+        </p>
+        <a href="#products" class="btn-primary">
+            Разгледайте нашите продукти
+        </a>
+    </section>
+
+    <section id="expertise" class="section-container">
+        <h2 class="text-4xl font-bold text-center text-gray-900 mb-16">Нашата Експертиза</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+            <div class="competency-card">
+                <div class="text-5xl text-blue-600 mb-5"><i class="fas fa-microchip"></i></div>
+                <h3 class="text-xl font-bold text-gray-800 mb-2">AI Разработка</h3>
+                <p class="text-gray-600">Създаваме и тренираме AI модели за автоматизация, анализ на данни и генериране на съдържание.</p>
+            </div>
+            <div class="competency-card">
+                <div class="text-5xl text-blue-600 mb-5"><i class="fas fa-layer-group"></i></div>
+                <h3 class="text-xl font-bold text-gray-800 mb-2">UI/UX Дизайн</h3>
+                <p class="text-gray-600">Проектираме интуитивни и естетически издържани потребителски интерфейси за уеб и мобилни приложения.</p>
+            </div>
+            <div class="competency-card">
+                <div class="text-5xl text-blue-600 mb-5"><i class="fas fa-code"></i></div>
+                <h3 class="text-xl font-bold text-gray-800 mb-2">Софтуерно Инженерство</h3>
+                <p class="text-gray-600">Изграждаме стабилни и мащабируеми софтуерни архитектури, които задвижват нашите продукти.</p>
+            </div>
         </div>
-    </header>
+    </section>
 
-    <main class="container mx-auto px-6 py-12">
+    <section id="products" class="mt-16">
+        <h2 class="text-4xl font-bold text-gray-900 mb-12 text-center">Ключови Продукти</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 max-w-7xl mx-auto">
 
-        <section id="home" class="text-center py-20">
-            <h1 class="text-5xl md:text-7xl font-extrabold text-gray-900 mb-6 leading-tight">
-                Интелигентни Решения<br>за Дигиталния Свят
-            </h1>
-            <p class="text-lg text-gray-600 max-w-3xl mx-auto mb-10">
-                Ние сме екип от софтуерни разработчици, специализирани в създаването на иновативни продукти с изкуствен интелект и модерен графичен дизайн.
+            <div class="product-card">
+                <img src="https://i.imgur.com/hdqVPAR.png" alt="NikiAI" class="w-full h-56 object-cover bg-gray-200">
+                 <div class="p-6 flex-grow flex flex-col">
+                    <h3 class="text-2xl font-bold text-gray-800 mb-2">NikiAI</h3>
+                    <p class="text-gray-600 flex-grow">
+                        Изкуствен интелект, който комуникира с глас, извършва емоционална симулация и притежава обширни познания.
+                    </p>
+                    <div class="mt-5 pt-5 border-t border-gray-200">
+                         <p class="text-sm text-gray-500">Очаквайте: <strong class="text-gray-700">Края на 2025</strong></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <img src="https://imgur.com/XwlYkKn.png" alt="Nexoclothing" class="w-full h-56 object-cover bg-gray-200">
+                 <div class="p-6 flex-grow flex flex-col">
+                    <h3 class="text-2xl font-bold text-gray-800 mb-2">Nexoclothing</h3>
+                    <p class="text-gray-600 flex-grow">
+                        Онлайн магазин за дрехи с 50% участие на организацията, предлагащ стилни колекции, достъпни цени и бърза доставка в цялата страна.
+                    </p>
+                    <div class="mt-5 pt-5 border-t border-gray-200">
+                         <p class="text-sm text-gray-500">Статус: <strong class="text-green-600">Активен</strong></p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="product-card">
+                <img src="https://i.imgur.com/LPlH4vH.png" alt="AI Synthetica" class="w-full h-56 object-cover bg-gray-200">
+                 <div class="p-6 flex-grow flex flex-col">
+                    <h3 class="text-2xl font-bold text-gray-800 mb-2">AI Synthetica</h3>
+                    <p class="text-gray-600 flex-grow">
+                        Платформа за генериране на висококачествени синтетични аватари и хора за дигитални проекти и симулации.
+                    </p>
+                    <div class="mt-5 pt-5 border-t border-gray-200">
+                         <p class="text-sm text-gray-500">Наличен: <strong class="text-gray-700">Средата на 2026</strong></p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="product-card">
+                <img src="https://i.imgur.com/GifT6qw.png" alt="Opentrading.us" class="w-full h-56 object-cover bg-gray-200">
+                <div class="p-6 flex-grow flex flex-col">
+                    <h3 class="text-2xl font-bold text-gray-800 mb-2">opentrading.us</h3>
+                    <p class="text-gray-600 flex-grow">
+                        Платформа за крипто търговия в <strong>бета версия</strong>, достъпна само с покани за избрани тестови потребители.
+                    </p>
+                    <div class="mt-5 pt-5 border-t border-gray-200">
+                         <p class="text-sm text-gray-500">Официален старт: <strong class="text-gray-700">1.08.2025</strong></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <img src="https://i.imgur.com/gCBp111.jpeg" alt="LinkVibe" class="w-full h-56 object-cover bg-gray-200">
+                 <div class="p-6 flex-grow flex flex-col">
+                    <h3 class="text-2xl font-bold text-gray-800 mb-2">LinkVibe</h3>
+                    <p class="text-gray-600 flex-grow">
+                        Генеративна платформа.
+                    </p>
+                    <div class="mt-5 pt-5 border-t border-gray-200">
+                         <p class="text-sm text-gray-500">Очаквайте: <strong class="text-gray-700">Края на 2026</strong></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <img src="https://i.imgur.com/SqNAiIe.png" alt="NightGPT" class="w-full h-56 object-cover bg-gray-200">
+                 <div class="p-6 flex-grow flex flex-col">
+                    <h3 class="text-2xl font-bold text-gray-800 mb-2">NightGPT</h3>
+                    <p class="text-gray-600 flex-grow">
+                         Подобрен потребителски интерфейс за сайта nightgpt.net, оптимизиран за лесна и бърза употреба.
+                    </p>
+                     <div class="mt-5 pt-5 border-t border-gray-200 flex items-center justify-between">
+                        <p class="text-sm text-gray-500">Статус: <strong class="text-green-600">Активен</strong></p>
+                        <a href="https://ha4bglol.github.io/nightttt/" target="_blank" class="text-blue-600 font-semibold hover:underline">Към сайта <i class="fas fa-arrow-right text-xs"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <img src="https://i.imgur.com/tsbs0dD.jpeg" alt="News Freedom" class="w-full h-56 object-cover bg-gray-200">
+                 <div class="p-6 flex-grow flex flex-col">
+                    <h3 class="text-2xl font-bold text-gray-800 mb-2">News Freedom</h3>
+                    <p class="text-gray-600 flex-grow">
+                         100% безплатен инструмент, финансиран от България Онлайн за достъп до безплатни новини с обновяваща се информация и изчистен дизайн с помощта на Google RSS.
+                    </p>
+                     <div class="mt-5 pt-5 border-t border-gray-200 flex items-center justify-between">
+                        <p class="text-sm text-gray-500">Статус: <strong class="text-green-600">Активен</strong></p>
+                        <a href="https://newsfreedom.space" target="_blank" class="text-blue-600 font-semibold hover:underline">Към сайта <i class="fas fa-arrow-right text-xs"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <img src="https://i.imgur.com/IbDNXgT.png" alt="Nivra Casino" class="w-full h-56 object-cover bg-gray-200">
+                 <div class="p-6 flex-grow flex flex-col">
+                    <h3 class="text-2xl font-bold text-gray-800 mb-2">Nivra Casino</h3>
+                    <p class="text-gray-600 flex-grow">
+                         Нашето бижу в колекцията от продукти, с висококачествени казино и социално iGaming изживяване, като България Онлайн организацията държи 100% дял и няма да се притесняваме да експериментираме.
+                    </p>
+                     <div class="mt-5 pt-5 border-t border-gray-200 flex items-center justify-between">
+                        <p class="text-sm text-gray-500">Статус: <strong class="text-green-600">Активен</strong></p>
+                        <a href="https://nivracasino.online" target="_blank" class="text-blue-600 font-semibold hover:underline">Към сайта <i class="fas fa-arrow-right text-xs"></i></a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="activity" class="section-container">
+        <div class="max-w-6xl mx-auto text-center">
+            <h2 class="text-4xl font-bold text-gray-900 mb-6">Нашата дейност</h2>
+            <p class="text-gray-700 leading-relaxed max-w-4xl mx-auto">
+                Подготвяме висококачествени уебсайтове с custom engine и най-новите технологии, като отделно създаваме сайтове от нулата и ги препродаваме.
             </p>
-            <a href="#products" class="btn-primary">
-                Разгледайте нашите продукти
-            </a>
-        </section>
-
-        <section id="expertise" class="section-container">
-            <h2 class="text-4xl font-bold text-center text-gray-900 mb-16">Нашата Експертиза</h2>
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
-                <div class="competency-card">
-                    <div class="text-5xl text-blue-600 mb-5"><i class="fas fa-microchip"></i></div>
-                    <h3 class="text-xl font-bold text-gray-800 mb-2">AI Разработка</h3>
-                    <p class="text-gray-600">Създаваме и тренираме AI модели за автоматизация, анализ на данни и генериране на съдържание.</p>
-                </div>
-                <div class="competency-card">
-                    <div class="text-5xl text-blue-600 mb-5"><i class="fas fa-layer-group"></i></div>
-                    <h3 class="text-xl font-bold text-gray-800 mb-2">UI/UX Дизайн</h3>
-                    <p class="text-gray-600">Проектираме интуитивни и естетически издържани потребителски интерфейси за уеб и мобилни приложения.</p>
-                </div>
-                <div class="competency-card">
-                    <div class="text-5xl text-blue-600 mb-5"><i class="fas fa-code"></i></div>
-                    <h3 class="text-xl font-bold text-gray-800 mb-2">Софтуерно Инженерство</h3>
-                    <p class="text-gray-600">Изграждаме стабилни и мащабируеми софтуерни архитектури, които задвижват нашите продукти.</p>
-                </div>
-            </div>
-        </section>
-
-        <section id="products" class="mt-16">
-            <h2 class="text-4xl font-bold text-gray-900 mb-12 text-center">Ключови Продукти</h2>
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 max-w-7xl mx-auto">
-
-                <div class="product-card">
-                    <img src="https://i.imgur.com/hdqVPAR.png" alt="NikiAI" class="w-full h-56 object-cover bg-gray-200">
-                     <div class="p-6 flex-grow flex flex-col">
-                        <h3 class="text-2xl font-bold text-gray-800 mb-2">NikiAI</h3>
-                        <p class="text-gray-600 flex-grow">
-                            Изкуствен интелект, който комуникира с глас, извършва емоционална симулация и притежава обширни познания.
-                        </p>
-                        <div class="mt-5 pt-5 border-t border-gray-200">
-                             <p class="text-sm text-gray-500">Очаквайте: <strong class="text-gray-700">Края на 2025</strong></p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="product-card">
-                    <img src="https://i.imgur.com/KVg0g2x.png" alt="Opti OS" class="w-full h-56 object-cover bg-gray-200">
-                     <div class="p-6 flex-grow flex flex-col">
-                        <h3 class="text-2xl font-bold text-gray-800 mb-2">Opti OS</h3>
-                        <p class="text-gray-600 flex-grow">
-                            Операционна браузър система от ново поколение, създадена за максимална бързина и продуктивност в облака.
-                        </p>
-                        <div class="mt-5 pt-5 border-t border-gray-200">
-                             <p class="text-sm text-gray-500">Очаквайте: <strong class="text-gray-700">Края на 2025</strong></p>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="product-card">
-                    <img src="https://i.imgur.com/LPlH4vH.png" alt="AI Synthetica" class="w-full h-56 object-cover bg-gray-200">
-                     <div class="p-6 flex-grow flex flex-col">
-                        <h3 class="text-2xl font-bold text-gray-800 mb-2">AI Synthetica</h3>
-                        <p class="text-gray-600 flex-grow">
-                            Платформа за генериране на висококачествени синтетични аватари и хора за дигитални проекти и симулации.
-                        </p>
-                        <div class="mt-5 pt-5 border-t border-gray-200">
-                             <p class="text-sm text-gray-500">Наличен: <strong class="text-gray-700">Края на 2025</strong></p>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="product-card">
-                    <img src="https://i.imgur.com/GifT6qw.png" alt="Opentrading.us" class="w-full h-56 object-cover bg-gray-200">
-                    <div class="p-6 flex-grow flex flex-col">
-                        <h3 class="text-2xl font-bold text-gray-800 mb-2">opentrading.us</h3>
-                        <p class="text-gray-600 flex-grow">
-                            Платформа за крипто търговия в <strong>бета версия</strong>, достъпна само с покани за избрани тестови потребители.
-                        </p>
-                        <div class="mt-5 pt-5 border-t border-gray-200">
-                             <p class="text-sm text-gray-500">Официален старт: <strong class="text-gray-700">1.08.2025</strong></p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="product-card">
-                    <img src="https://i.imgur.com/45O8v9X.png" alt="LinkVibe" class="w-full h-56 object-cover bg-gray-200">
-                     <div class="p-6 flex-grow flex flex-col">
-                        <h3 class="text-2xl font-bold text-gray-800 mb-2">LinkVibe</h3>
-                        <p class="text-gray-600 flex-grow">
-                            Социална мрежа от ново поколение, която е в <strong>много ранен етап на разработка</strong>.
-                        </p>
-                        <div class="mt-5 pt-5 border-t border-gray-200">
-                             <p class="text-sm text-gray-500">Очаквайте: <strong class="text-gray-700">Пролетта на 2026</strong></p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="product-card">
-                    <img src="https://i.imgur.com/SqNAiIe.png" alt="NightGPT" class="w-full h-56 object-cover bg-gray-200">
-                     <div class="p-6 flex-grow flex flex-col">
-                        <h3 class="text-2xl font-bold text-gray-800 mb-2">NightGPT</h3>
-                        <p class="text-gray-600 flex-grow">
-                             Подобрен потребителски интерфейс за сайта nightgpt.net, оптимизиран за лесна и бърза употреба.
-                        </p>
-                         <div class="mt-5 pt-5 border-t border-gray-200 flex items-center justify-between">
-                            <p class="text-sm text-gray-500">Статус: <strong class="text-gray-700">Активен</strong></p>
-                            <a href="https://ha4bglol.github.io/nightttt/" target="_blank" class="text-blue-600 font-semibold hover:underline">Към сайта <i class="fas fa-arrow-right text-xs"></i></a>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-        </section>
-
-        <section id="about" class="section-container">
-            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center max-w-6xl mx-auto">
-                <div class="space-y-6">
-                     <h2 class="text-4xl font-bold text-gray-900">Задвижени от Иновации</h2>
-                    <p class="text-gray-700 leading-relaxed">
-                        Ние сме сплотен екип от 20 професионалисти, които инвестират своето време и умения за създаването на продукти от следващо поколение. Нашата дейност се финансира изцяло с <b>частни средства</b> на учредителите, което ни дава свободата да преследваме смели и иновативни идеи.
-                    </p>
-                    <p class="text-gray-700 leading-relaxed">
-                        Бизнес моделът ни е фокусиран върху разработването на платени услуги в сферата на AI и крипто търговията. Всички приходи се реинвестират директно в проучване и разработка, за да продължим да разширяваме границите на възможното.
-                    </p>
-                </div>
-                <div class="text-center">
-                    <i class="fas fa-users text-9xl text-gray-300"></i>
-                </div>
-            </div>
-        </section>
-
-    </main>
-
-    <footer class="bg-white mt-20 border-t">
-        <div class="container mx-auto px-6 py-8 text-center text-gray-600">
-            &copy; 2025 Bulgaria Online. Всички права запазени.Registered in PLovdiv,Bulgaria
         </div>
-    </footer>
+    </section>
 
+    <section id="about" class="section-container">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center max-w-6xl mx-auto">
+            <div class="space-y-6">
+                 <h2 class="text-4xl font-bold text-gray-900">Задвижени от Иновации</h2>
+                <p class="text-gray-700 leading-relaxed">
+                    Ние сме сплотен екип от 7 професионалисти, които инвестират своето време и умения за създаването на продукти от следващо поколение. Нашата дейност се финансира изцяло с <b>частни средства</b> на учредителите, което ни дава свободата да преследваме смели и иновативни идеи.
+                </p>
+                <p class="text-gray-700 leading-relaxed">
+                    Бизнес моделът ни е фокусиран върху разработването на платени услуги в сферата на AI и крипто търговията. Всички приходи се реинвестират директно в проучване и разработка, за да продължим да разширяваме границите на възможното.
+                </p>
+            </div>
+            <div class="text-center">
+                <i class="fas fa-users text-9xl text-gray-300"></i>
+            </div>
+        </div>
+    </section>
+
+</main>
+
+<footer class="bg-white mt-20 border-t">
+    <div class="container mx-auto px-6 py-8 text-center text-gray-600">
+        <div class="mb-4">
+            <p class="font-semibold">Контакти:</p>
+            <p>+359895953001 | +359096350549</p>
+        </div>
+        &copy; 2025 Bulgaria Online. Всички права запазени. Registered in Plovdiv, Bulgaria
+    </div>
+</footer>
 </body>
 </html>
